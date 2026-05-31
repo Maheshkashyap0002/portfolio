@@ -1,0 +1,658 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b1120;
+    color:#fff;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0b1120;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00e5ff;
+    border-radius:20px;
+}
+
+/* =========================
+   LOADER
+========================= */
+
+#loader{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.spinner{
+    width:70px;
+    height:70px;
+    border:5px solid rgba(255,255,255,.2);
+    border-top:5px solid #00e5ff;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* =========================
+   PARTICLES
+========================= */
+
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+
+/* =========================
+   PROGRESS BAR
+========================= */
+
+#progress-bar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:4px;
+    width:0%;
+    background:#00e5ff;
+    z-index:99999;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,.05);
+    border-bottom:1px solid rgba(255,255,255,.08);
+    z-index:999;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#fff;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#00e5ff;
+}
+
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+#themeToggle{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#00e5ff;
+    cursor:pointer;
+}
+
+#themeToggle i{
+    font-size:18px;
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    cursor:pointer;
+}
+
+.hamburger span{
+    width:25px;
+    height:3px;
+    background:#fff;
+    margin:3px 0;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:120px 8%;
+}
+
+.hero-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.hero-image{
+    text-align:center;
+}
+
+.hero-image img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid rgba(255,255,255,.2);
+    box-shadow:0 0 50px rgba(0,229,255,.3);
+}
+
+.hero-tag{
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    font-weight:800;
+}
+
+.hero-content h2{
+    color:#00e5ff;
+    margin:15px 0;
+    min-height:40px;
+}
+
+.hero-description{
+    color:#d6d6d6;
+    margin-top:15px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.hero-buttons{
+    margin-top:30px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:12px;
+    transition:.4s;
+    display:inline-block;
+}
+
+.primary-btn{
+    background:#00e5ff;
+    color:#000;
+    font-weight:600;
+}
+
+.primary-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 30px rgba(0,229,255,.4);
+}
+
+.secondary-btn{
+    border:1px solid #00e5ff;
+    color:#00e5ff;
+}
+
+.secondary-btn:hover{
+    background:#00e5ff;
+    color:#000;
+}
+
+/* =========================
+   SOCIAL ICONS
+========================= */
+
+.social-icons{
+    margin-top:30px;
+}
+
+.social-icons a{
+    color:#fff;
+    margin-right:20px;
+    font-size:28px;
+    transition:.3s;
+}
+
+.social-icons a:hover{
+    color:#00e5ff;
+    transform:translateY(-5px);
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+    padding:100px 0;
+}
+
+.section-title{
+    text-align:center;
+    font-size:3rem;
+    margin-bottom:50px;
+}
+
+/* =========================
+   GLASS CARD
+========================= */
+
+.glass-card{
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:35px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-card{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-card p{
+    margin-bottom:15px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skill-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+.skill-card i{
+    font-size:60px;
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+/* =========================
+   COUNTERS
+========================= */
+
+.counter-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.counter-card{
+    text-align:center;
+    background:rgba(255,255,255,.05);
+    padding:30px;
+    border-radius:20px;
+}
+
+.counter-card h2{
+    font-size:3rem;
+    color:#00e5ff;
+}
+
+/* =========================
+   FILTER BUTTONS
+========================= */
+
+.filter-buttons{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.filter-btn{
+    padding:12px 20px;
+    border:none;
+    margin:8px;
+    border-radius:10px;
+    cursor:pointer;
+    background:#1b2436;
+    color:#fff;
+}
+
+.filter-btn.active{
+    background:#00e5ff;
+    color:#000;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:25px;
+    transition:.4s;
+    transform-style:preserve-3d;
+}
+
+.project-card:hover{
+    transform:
+    rotateX(5deg)
+    rotateY(5deg)
+    translateY(-10px);
+}
+
+.project-card h3{
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline{
+    position:relative;
+    max-width:800px;
+    margin:auto;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    width:4px;
+    background:#00e5ff;
+    top:0;
+    bottom:0;
+    left:20px;
+}
+
+.timeline-item{
+    padding:20px 20px 20px 60px;
+    margin-bottom:20px;
+    position:relative;
+    background:rgba(255,255,255,.05);
+    border-radius:15px;
+}
+
+.timeline-item::before{
+    content:"";
+    width:18px;
+    height:18px;
+    background:#00e5ff;
+    border-radius:50%;
+    position:absolute;
+    left:12px;
+    top:28px;
+}
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-card{
+    max-width:700px;
+    margin:auto;
+    text-align:center;
+}
+
+/* =========================
+   GITHUB
+========================= */
+
+.github-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.github-section img{
+    max-width:100%;
+    border-radius:15px;
+}
+
+/* =========================
+   RESUME
+========================= */
+
+.resume-section{
+    text-align:center;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+#contact-form input,
+#contact-form textarea{
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#172033;
+    color:#fff;
+}
+
+#contact-form textarea{
+    resize:none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    padding:40px 20px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+/* =========================
+   LIGHT MODE
+========================= */
+
+body.light-mode{
+    background:#f4f6fb;
+    color:#111;
+}
+
+body.light-mode .navbar{
+    background:rgba(255,255,255,.8);
+}
+
+body.light-mode .glass-card,
+body.light-mode .skill-card,
+body.light-mode .project-card,
+body.light-mode .counter-card,
+body.light-mode .timeline-item{
+    background:#fff;
+    color:#111;
+}
+
+body.light-mode .nav-links a{
+    color:#111;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero-image img{
+        width:280px;
+        height:280px;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        position:fixed;
+        top:80px;
+        right:-100%;
+        width:250px;
+        height:100vh;
+        background:#111827;
+        flex-direction:column;
+        padding:40px;
+        transition:.4s;
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .section-title{
+        font-size:2.3rem;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.nav-avatar{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #00e5ff;
+    box-shadow:0 0 10px #00e5ff;
+}
+
+
+
+}
+
+.supportText {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom:60px;
+}
