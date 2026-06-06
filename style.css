@@ -662,3 +662,9 @@ body.light-mode .nav-links a{
     margin-bottom: 30px;
 
 }
+
+.project-card h3,
+.project-card h3 a{
+    color: #00e5ff;
+    text-decoration: none;
+}
