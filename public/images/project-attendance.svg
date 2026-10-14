@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgAtt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9F9FB" />
+      <stop offset="100%" stop-color="#EDEDF2" />
+    </linearGradient>
+    <filter id="shadowAtt" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.06" />
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgAtt)" />
+  
+  <g stroke="#E3E3E8" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+  </g>
+
+  <g transform="translate(60, 50)" filter="url(#shadowAtt)">
+    <rect width="680" height="400" rx="16" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.5" />
+    
+    <circle cx="30" cy="30" r="5" fill="#EF4444" />
+    <circle cx="46" cy="30" r="5" fill="#F59E0B" />
+    <circle cx="62" cy="30" r="5" fill="#10B981" />
+    <line x1="0" y1="60" x2="680" y2="60" stroke="#F3F4F6" stroke-width="1.5" />
+    <text x="340" y="35" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#6B7280" text-anchor="middle">ai-attendance-hub.internal</text>
+
+    <rect x="30" y="85" width="280" height="280" rx="12" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5" />
+    <circle cx="170" cy="190" r="70" fill="none" stroke="#3B82F6" stroke-width="3" stroke-dasharray="12 6" />
+    <circle cx="170" cy="190" r="45" fill="#DBEAFE" />
+    <path d="M 155 180 A 15 15 0 0 1 185 180 C 185 195 155 195 155 180 Z" fill="#1E40AF" />
+    <path d="M 140 220 C 140 205 200 205 200 220 Z" fill="#1E40AF" />
+    <circle cx="150" cy="175" r="3" fill="#2563EB" />
+    <circle cx="190" cy="175" r="3" fill="#2563EB" />
+    <circle cx="170" cy="200" r="3" fill="#2563EB" />
+    <line x1="140" y1="190" x2="200" y2="190" stroke="#60A5FA" stroke-width="1.5" />
+    <text x="170" y="325" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#1E293B" text-anchor="middle">Facial Recognition Scan</text>
+    <rect x="110" y="340" width="120" height="20" rx="10" fill="#DCFCE7" />
+    <text x="170" y="354" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#15803D" text-anchor="middle">MATCH CONFIRMED 99.4%</text>
+
+    <rect x="330" y="85" width="320" height="70" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="350" y="115" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#64748B">TODAY'S ATTENDANCE</text>
+    <text x="350" y="142" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#0F172A">94.8% <tspan font-size="12" font-weight="500" fill="#10B981">+4.2% vs avg</tspan></text>
+
+    <rect x="330" y="170" width="320" height="42" rx="8" fill="#FFFFFF" stroke="#F1F5F9" />
+    <circle cx="350" cy="191" r="5" fill="#10B981" />
+    <text x="365" y="195" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1E293B">Mahesh Kumar</text>
+    <text x="590" y="195" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#64748B">09:02 AM</text>
+
+    <rect x="330" y="222" width="320" height="42" rx="8" fill="#FFFFFF" stroke="#F1F5F9" />
+    <circle cx="350" cy="243" r="5" fill="#10B981" />
+    <text x="365" y="247" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1E293B">Aarav Sharma</text>
+    <text x="590" y="247" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#64748B">09:04 AM</text>
+
+    <rect x="330" y="274" width="320" height="42" rx="8" fill="#FFFFFF" stroke="#F1F5F9" />
+    <circle cx="350" cy="295" r="5" fill="#10B981" />
+    <text x="365" y="299" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#1E293B">Priya Patel</text>
+    <text x="590" y="299" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#64748B">09:11 AM</text>
+
+    <rect x="330" y="326" width="320" height="42" rx="8" fill="#F0FDF4" stroke="#DCFCE7" />
+    <text x="490" y="352" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#166534" text-anchor="middle">Live Sync Active • MongoDB Connected</text>
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSpot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3FDF7" />
+      <stop offset="100%" stop-color="#E5F8ED" />
+    </linearGradient>
+    <filter id="shadowSpot" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.06" />
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgSpot)" />
+  
+  <g transform="translate(60, 50)" filter="url(#shadowSpot)">
+    <rect width="680" height="400" rx="16" fill="#18181B" stroke="#27272A" stroke-width="1.5" />
+    
+    <!-- Window controls -->
+    <circle cx="30" cy="30" r="5" fill="#EF4444" />
+    <circle cx="46" cy="30" r="5" fill="#F59E0B" />
+    <circle cx="62" cy="30" r="5" fill="#10B981" />
+    <line x1="0" y1="60" x2="680" y2="60" stroke="#27272A" stroke-width="1.5" />
+    <text x="340" y="35" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#A1A1AA" text-anchor="middle">api.spotify-core.internal/v1/stream</text>
+
+    <!-- Left Code / Endpoint Matrix -->
+    <g transform="translate(30, 85)">
+      <rect width="360" height="280" rx="10" fill="#09090B" stroke="#27272A" />
+      
+      <!-- API Endpoints -->
+      <g transform="translate(20, 30)">
+        <rect width="46" height="20" rx="4" fill="#10B981" />
+        <text x="23" y="14" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#000000" text-anchor="middle">GET</text>
+        <text x="56" y="15" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#F4F4F5">/api/v1/tracks/:id/stream</text>
+        <text x="300" y="15" font-family="'Courier New', monospace" font-size="11" fill="#10B981">200 OK</text>
+      </g>
+      
+      <g transform="translate(20, 75)">
+        <rect width="46" height="20" rx="4" fill="#3B82F6" />
+        <text x="23" y="14" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">POST</text>
+        <text x="56" y="15" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#F4F4F5">/api/v1/auth/login [JWT]</text>
+        <text x="300" y="15" font-family="'Courier New', monospace" font-size="11" fill="#10B981">200 OK</text>
+      </g>
+
+      <g transform="translate(20, 120)">
+        <rect width="46" height="20" rx="4" fill="#3B82F6" />
+        <text x="23" y="14" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">POST</text>
+        <text x="56" y="15" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#F4F4F5">/api/v1/playlists/create</text>
+        <text x="300" y="15" font-family="'Courier New', monospace" font-size="11" fill="#10B981">201 OK</text>
+      </g>
+
+      <g transform="translate(20, 165)">
+        <rect width="46" height="20" rx="4" fill="#EAB308" />
+        <text x="23" y="14" font-family="system-ui, sans-serif" font-size="10" font-weight="800" fill="#000000" text-anchor="middle">PUT</text>
+        <text x="56" y="15" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#F4F4F5">/api/v1/user/library</text>
+        <text x="300" y="15" font-family="'Courier New', monospace" font-size="11" fill="#10B981">200 OK</text>
+      </g>
+
+      <line x1="20" y1="210" x2="340" y2="210" stroke="#27272A" />
+      
+      <text x="20" y="240" font-family="'Courier New', monospace" font-size="11" fill="#22C55E">✓ Audio chunk buffering: 320kbps AAC</text>
+      <text x="20" y="260" font-family="'Courier New', monospace" font-size="11" fill="#71717A">⚡ Latency: 24ms • MongoDB Aggregation pipeline</text>
+    </g>
+
+    <!-- Right Side Architecture / DB Schema -->
+    <g transform="translate(410, 85)">
+      <rect width="240" height="280" rx="10" fill="#09090B" stroke="#27272A" />
+      <text x="20" y="30" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#22C55E">SERVICES &amp; ARCHITECTURE</text>
+      
+      <rect x="20" y="45" width="200" height="58" rx="8" fill="#18181B" stroke="#27272A" />
+      <text x="32" y="68" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">Audio Chunk Streamer</text>
+      <text x="32" y="86" font-family="system-ui, sans-serif" font-size="10" fill="#71717A">HTTP 206 Partial Content</text>
+
+      <rect x="20" y="115" width="200" height="58" rx="8" fill="#18181B" stroke="#27272A" />
+      <text x="32" y="138" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">JWT + Cookie Guard</text>
+      <text x="32" y="156" font-family="system-ui, sans-serif" font-size="10" fill="#71717A">Role-based Access &amp; Refresh</text>
+
+      <rect x="20" y="185" width="200" height="58" rx="8" fill="#18181B" stroke="#27272A" />
+      <text x="32" y="208" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">MongoDB Schemas</text>
+      <text x="32" y="226" font-family="system-ui, sans-serif" font-size="10" fill="#71717A">Users, Playlists, Metadata</text>
+
+      <text x="120" y="265" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#10B981" text-anchor="middle">● Microservices Ready</text>
+    </g>
+  </g>
+</svg>

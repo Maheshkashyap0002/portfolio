@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGpt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4F8F7" />
+      <stop offset="100%" stop-color="#E5EFEA" />
+    </linearGradient>
+    <linearGradient id="bubbleAi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10A37F" />
+      <stop offset="100%" stop-color="#0E8C6D" />
+    </linearGradient>
+    <filter id="shadowGpt" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.07" />
+    </filter>
+  </defs>
+  
+  <rect width="800" height="500" fill="url(#bgGpt)" />
+  
+  <!-- Subtle Grid Pattern -->
+  <g stroke="#D1E3DB" stroke-width="1" opacity="0.5">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+  </g>
+
+  <!-- Main Window -->
+  <g transform="translate(60, 45)" filter="url(#shadowGpt)">
+    <rect width="680" height="410" rx="16" fill="#202123" stroke="#343541" stroke-width="1.5" />
+    
+    <!-- Window controls -->
+    <circle cx="28" cy="24" r="5" fill="#EF4444" />
+    <circle cx="44" cy="24" r="5" fill="#F59E0B" />
+    <circle cx="60" cy="24" r="5" fill="#10B981" />
+    <line x1="0" y1="48" x2="680" y2="48" stroke="#2D2F36" stroke-width="1" />
+    <text x="340" y="28" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#9CA3AF" text-anchor="middle">chatgpt-clone.react-node.internal</text>
+
+    <!-- Sidebar (Left) -->
+    <rect x="0" y="49" width="170" height="361" fill="#17181A" rx="0" />
+    <rect x="14" y="62" width="142" height="32" rx="8" fill="#202123" stroke="#40414F" stroke-width="1" />
+    <text x="36" y="82" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#ECECF1">+ New Chat</text>
+    
+    <text x="16" y="125" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#8E8EA0">RECENT CHATS</text>
+    <rect x="14" y="135" width="142" height="26" rx="6" fill="#2A2B32" />
+    <text x="24" y="152" font-family="system-ui, sans-serif" font-size="11" fill="#ECECF1">Full-Stack MERN Architecture</text>
+    <text x="24" y="180" font-family="system-ui, sans-serif" font-size="11" fill="#8E8EA0">Express SSE Streaming</text>
+    <text x="24" y="208" font-family="system-ui, sans-serif" font-size="11" fill="#8E8EA0">React State Management</text>
+    <text x="24" y="236" font-family="system-ui, sans-serif" font-size="11" fill="#8E8EA0">JWT Auth Flow</text>
+
+    <!-- Chat Area -->
+    <g transform="translate(185, 60)">
+      <!-- Model Badge -->
+      <rect x="180" y="0" width="110" height="24" rx="12" fill="#343541" stroke="#40414F" stroke-width="1" />
+      <circle cx="195" cy="12" r="4" fill="#10A37F" />
+      <text x="206" y="16" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#ECECF1">GPT-4 Turbo</text>
+
+      <!-- User Message -->
+      <g transform="translate(20, 40)">
+        <rect width="440" height="42" rx="10" fill="#343541" />
+        <circle cx="22" cy="21" r="11" fill="#5865F2" />
+        <text x="22" y="25" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">U</text>
+        <text x="44" y="25" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#ECECF1">How do you implement real-time token streaming with Node.js &amp; React?</text>
+      </g>
+
+      <!-- AI Response Message -->
+      <g transform="translate(20, 95)">
+        <rect width="440" height="185" rx="10" fill="#2A2B32" stroke="#3E3F4B" stroke-width="1" />
+        <rect x="12" y="12" width="22" height="22" rx="6" fill="url(#bubbleAi)" />
+        <text x="23" y="27" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">⚡</text>
+        <text x="44" y="27" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#10A37F">ChatGPT Assistant</text>
+
+        <text x="16" y="55" font-family="system-ui, sans-serif" font-size="11" fill="#D1D5DB">You can achieve low-latency response streaming via Server-Sent Events (SSE):</text>
+        
+        <!-- Code block snippet -->
+        <g transform="translate(16, 68)">
+          <rect width="408" height="85" rx="6" fill="#0D0D0D" stroke="#262626" />
+          <text x="14" y="20" font-family="'Courier New', monospace" font-size="10" fill="#6EE7B7">// Node.js Express SSE Route</text>
+          <text x="14" y="38" font-family="'Courier New', monospace" font-size="10" fill="#F472B6">res.setHeader('Content-Type', 'text/event-stream');</text>
+          <text x="14" y="56" font-family="'Courier New', monospace" font-size="10" fill="#60A5FA">for await (const chunk of stream) {</text>
+          <text x="28" y="74" font-family="'Courier New', monospace" font-size="10" fill="#34D399">  res.write(`data: ${JSON.stringify(chunk)}\n\n`);</text>
+        </g>
+        
+        <text x="16" y="174" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">✓ Real-time buffer flush • Token rate: ~65 tok/s</text>
+      </g>
+
+      <!-- Bottom Chat Input -->
+      <g transform="translate(20, 295)">
+        <rect width="440" height="42" rx="12" fill="#40414F" stroke="#565869" stroke-width="1" />
+        <text x="18" y="26" font-family="system-ui, sans-serif" font-size="11" fill="#8E8EA0">Send a prompt or ask for code implementation...</text>
+        <circle cx="418" cy="21" r="14" fill="#10A37F" />
+        <path d="M 414 25 L 422 21 L 414 17 Z" fill="#FFFFFF" />
+      </g>
+    </g>
+  </g>
+</svg>

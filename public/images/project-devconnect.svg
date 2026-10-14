@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgDev" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="100%" stop-color="#EFF6FF" />
+    </linearGradient>
+    <linearGradient id="accentDev" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#4F46E5" />
+    </linearGradient>
+    <filter id="shadowDev" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.07" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgDev)" />
+
+  <!-- Grid Lines -->
+  <g stroke="#E2E8F0" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+  </g>
+
+  <!-- Browser Window -->
+  <g transform="translate(60, 45)" filter="url(#shadowDev)">
+    <rect width="680" height="410" rx="16" fill="#0D1117" stroke="#30363D" stroke-width="1.5" />
+
+    <!-- Window controls -->
+    <circle cx="28" cy="24" r="5" fill="#EF4444" />
+    <circle cx="44" cy="24" r="5" fill="#F59E0B" />
+    <circle cx="60" cy="24" r="5" fill="#10B981" />
+    <line x1="0" y1="48" x2="680" y2="48" stroke="#21262D" stroke-width="1" />
+    <text x="340" y="28" font-family="'Courier New', monospace" font-size="12" font-weight="600" fill="#8B949E" text-anchor="middle">github.devconnect.internal/mahesh/fullstack-mern</text>
+
+    <!-- Top repo header -->
+    <g transform="translate(24, 65)">
+      <circle cx="12" cy="12" r="10" fill="#238636" />
+      <text x="12" y="16" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">⚡</text>
+      <text x="32" y="16" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#58A6FF">maheshkashyap / <tspan fill="#F0F6FC">fullstack-mern-ecosystem</tspan></text>
+      <rect x="360" y="2" width="56" height="20" rx="10" fill="#21262D" stroke="#30363D" />
+      <text x="388" y="15" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#8B949E" text-anchor="middle">Public</text>
+
+      <!-- Stats -->
+      <rect x="520" y="2" width="110" height="22" rx="6" fill="#21262D" stroke="#30363D" />
+      <text x="545" y="16" font-family="system-ui, sans-serif" font-size="11" fill="#F0F6FC">⭐ Star 142</text>
+    </g>
+
+    <!-- Main File Explorer & Commits -->
+    <g transform="translate(24, 110)">
+      <rect width="632" height="185" rx="8" fill="#161B22" stroke="#30363D" />
+      
+      <!-- Branch and commit bar -->
+      <rect width="632" height="36" rx="8" fill="#21262D" />
+      <text x="16" y="22" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#F0F6FC">⎇ main • Latest commit: feat(api): implement JWT token rotation &amp; rate-limiting</text>
+      <text x="560" y="22" font-family="'Courier New', monospace" font-size="11" fill="#8B949E">3 mins ago</text>
+
+      <!-- File Rows -->
+      <g transform="translate(16, 52)">
+        <text x="0" y="14" font-family="'Courier New', monospace" font-size="11" fill="#58A6FF">📁 src/controllers/auth.controller.js</text>
+        <text x="360" y="14" font-family="system-ui, sans-serif" font-size="10" fill="#8B949E">Add bcrypt hashing &amp; HttpOnly refresh</text>
+      </g>
+      <line x1="16" y1="78" x2="616" y2="78" stroke="#21262D" />
+
+      <g transform="translate(16, 92)">
+        <text x="0" y="14" font-family="'Courier New', monospace" font-size="11" fill="#58A6FF">📁 src/routes/stream.routes.js</text>
+        <text x="360" y="14" font-family="system-ui, sans-serif" font-size="10" fill="#8B949E">Setup SSE event stream &amp; buffer flush</text>
+      </g>
+      <line x1="16" y1="118" x2="616" y2="118" stroke="#21262D" />
+
+      <g transform="translate(16, 132)">
+        <text x="0" y="14" font-family="'Courier New', monospace" font-size="11" fill="#58A6FF">📄 Dockerfile &amp; docker-compose.yml</text>
+        <text x="360" y="14" font-family="system-ui, sans-serif" font-size="10" fill="#8B949E">Multi-stage build with MongoDB container</text>
+      </g>
+    </g>
+
+    <!-- Bottom Readme Snippet -->
+    <g transform="translate(24, 310)">
+      <rect width="632" height="80" rx="8" fill="#161B22" stroke="#30363D" />
+      <text x="16" y="24" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#F0F6FC">README.md</text>
+      <text x="16" y="46" font-family="system-ui, sans-serif" font-size="11" fill="#8B949E">Production-grade MERN architecture: React frontend with Vite, Express microservices, MongoDB replica set.</text>
+      <text x="16" y="66" font-family="'Courier New', monospace" font-size="10" fill="#3FB950">✓ Passing 48 Unit &amp; Integration Tests • 99.8% Code Coverage</text>
+    </g>
+  </g>
+</svg>

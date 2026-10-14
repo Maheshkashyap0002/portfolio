@@ -1,0 +1,120 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 792]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<<
+  /Length 1711
+>>
+stream
+BT
+/F2 22 Tf
+50 735 Td
+(MAHESH KUMAR) Tj
+/F1 11 Tf
+0 -22 Td
+(Full Stack Web Developer | National Institute of Technology (NIT) Raipur) Tj
+0 -15 Td
+(B.Tech Undergraduate | Raipur, Chhattisgarh, India) Tj
+0 -15 Td
+(Email: mkumar051.btech2025@nitrr.ac.in | GitHub: github.com/Maheshkashyap0002) Tj
+0 -28 Td
+/F2 13 Tf
+(EDUCATION) Tj
+/F1 10.5 Tf
+0 -18 Td
+(National Institute of Technology (NIT) Raipur - Bachelor of Technology (2025 - 2029)) Tj
+0 -28 Td
+/F2 13 Tf
+(TECHNICAL SKILLS) Tj
+/F1 10.5 Tf
+0 -18 Td
+(Frontend: React.js, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Responsive UI) Tj
+0 -15 Td
+(Backend: Node.js, Express.js, REST APIs, JWT Authentication, WebSockets) Tj
+0 -15 Td
+(Database: MongoDB, Mongoose, Schema Modeling) Tj
+0 -15 Td
+(Tools & CS: Git, GitHub, Postman, VS Code, Data Structures, OOP, System Design) Tj
+0 -28 Td
+/F2 13 Tf
+(FEATURED PROJECTS) Tj
+/F1 10.5 Tf
+0 -18 Td
+(1. AI Attendance System - Full Stack MERN facial-recognition attendance tracker) Tj
+0 -15 Td
+(2. Live Bus Tracking Platform - GPS transit tracking, role-based passenger/driver system) Tj
+0 -15 Td
+(3. Vacation Rental Booking Platform - MERN Airbnb clone with booking workflows) Tj
+0 -15 Td
+(4. Zerodha-Style Stock Trading Terminal - Real-time market UI, watchlist, portfolio) Tj
+0 -15 Td
+(5. Spotify Audio Streaming Backend - High throughput REST APIs & audio chunking) Tj
+0 -15 Td
+(6. Banking Core & Ledger Backend - ACID transaction integrity & secure auth) Tj
+0 -28 Td
+/F2 13 Tf
+(EXPERIENCE & APPLIED LEARNING) Tj
+/F1 10.5 Tf
+0 -18 Td
+(Technical Engineering Intern - Precision layout documentation & system schematics) Tj
+0 -15 Td
+(Full Stack Developer - Built 6+ production-grade web applications with MERN stack) Tj
+ET
+endstream
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000062 00000 n 
+0000000125 00000 n 
+0000000293 00000 n 
+0000002058 00000 n 
+0000002134 00000 n 
+trailer
+<<
+  /Size 7
+  /Root 1 0 R
+>>
+startxref
+2215
+%%EOF

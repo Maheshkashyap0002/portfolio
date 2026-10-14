@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgBus" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5FAF8" />
+      <stop offset="100%" stop-color="#E7F3EF" />
+    </linearGradient>
+    <filter id="shadowBus" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#000000" flood-opacity="0.06" />
+    </filter>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgBus)" />
+  
+  <g transform="translate(60, 50)" filter="url(#shadowBus)">
+    <rect width="680" height="400" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" />
+    
+    <circle cx="30" cy="30" r="5" fill="#EF4444" />
+    <circle cx="46" cy="30" r="5" fill="#F59E0B" />
+    <circle cx="62" cy="30" r="5" fill="#10B981" />
+    <line x1="0" y1="60" x2="680" y2="60" stroke="#F1F5F9" stroke-width="1.5" />
+    <text x="340" y="35" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#64748B" text-anchor="middle">transit-fleet.live • Realtime Route Matrix</text>
+
+    <rect x="25" y="80" width="410" height="295" rx="12" fill="#F1F5F9" stroke="#E2E8F0" />
+    <path d="M 50 150 Q 150 120 220 200 T 380 230" fill="none" stroke="#CBD5E1" stroke-width="18" stroke-linecap="round" />
+    <path d="M 120 340 Q 200 280 220 200 T 320 100" fill="none" stroke="#CBD5E1" stroke-width="14" stroke-linecap="round" />
+    <path d="M 50 150 Q 150 120 220 200 T 380 230" fill="none" stroke="#059669" stroke-width="6" stroke-dasharray="8 6" />
+    
+    <circle cx="50" cy="150" r="8" fill="#10B981" stroke="#FFFFFF" stroke-width="3" />
+    <circle cx="220" cy="200" r="8" fill="#10B981" stroke="#FFFFFF" stroke-width="3" />
+    <circle cx="380" cy="230" r="8" fill="#EF4444" stroke="#FFFFFF" stroke-width="3" />
+    
+    <g transform="translate(180, 165)">
+      <rect width="64" height="28" rx="14" fill="#0F172A" />
+      <text x="32" y="18" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">BUS #14A</text>
+      <polygon points="32,32 26,28 38,28" fill="#0F172A" />
+    </g>
+
+    <rect x="40" y="315" width="220" height="45" rx="8" fill="#FFFFFF" opacity="0.95" stroke="#E2E8F0" />
+    <text x="52" y="333" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#64748B">ESTIMATED ARRIVAL</text>
+    <text x="52" y="350" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#0F172A">4 mins • NIT Raipur Gate</text>
+
+    <rect x="455" y="80" width="200" height="85" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+    <text x="470" y="105" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#64748B">FLEET STATUS</text>
+    <text x="470" y="132" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#0F172A">18 Active <tspan font-size="12" font-weight="500" fill="#10B981">98% on-time</tspan></text>
+    <text x="470" y="152" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#64748B">Socket.io GPS feeds</text>
+
+    <g transform="translate(455, 180)">
+      <rect width="200" height="55" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+      <text x="15" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#1E293B">Passenger App</text>
+      <text x="15" y="42" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#64748B">Real-time ETA &amp; alerts</text>
+      <circle cx="180" cy="27" r="5" fill="#10B981" />
+    </g>
+    
+    <g transform="translate(455, 245)">
+      <rect width="200" height="55" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+      <text x="15" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#1E293B">Driver Console</text>
+      <text x="15" y="42" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#64748B">GPS broadcaster &amp; route</text>
+      <circle cx="180" cy="27" r="5" fill="#10B981" />
+    </g>
+
+    <g transform="translate(455, 310)">
+      <rect width="200" height="55" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+      <text x="15" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#1E293B">Admin Control</text>
+      <text x="15" y="42" font-family="system-ui, sans-serif" font-size="10" font-weight="500" fill="#64748B">Fleet &amp; emergency override</text>
+      <circle cx="180" cy="27" r="5" fill="#3B82F6" />
+    </g>
+  </g>
+</svg>
