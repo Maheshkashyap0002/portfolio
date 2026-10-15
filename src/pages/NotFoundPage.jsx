@@ -35,7 +35,7 @@ export function NotFoundPage() {
         initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="w-full max-w-md sm:max-w-lg mx-auto text-center flex flex-col items-center justify-center"
+        className="w-full max-w-md sm:max-w-lg mx-auto text-center flex flex-col items-center justify-center -translate-y-[10px]"
       >
         {/* Lottie Animation Display (Optimized for Mobile & Desktop) */}
         <div className="w-full max-w-[270px] xs:max-w-[320px] sm:max-w-[400px] aspect-[16/10] sm:aspect-[16/9] mx-auto flex items-center justify-center mb-1">
