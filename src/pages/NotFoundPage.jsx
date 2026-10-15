@@ -30,12 +30,12 @@ export function NotFoundPage() {
   }, [shouldReduceMotion]);
 
   return (
-    <div className="min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-20 sm:pt-28 pb-12 sm:pb-16 px-4">
+    <div className="flex items-center justify-center pt-20 sm:pt-24 pb-6 sm:pb-8 px-4">
       <motion.div
         initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="w-full max-w-md sm:max-w-lg mx-auto text-center flex flex-col items-center justify-center -translate-y-[10px]"
+        className="w-full max-w-md sm:max-w-lg mx-auto text-center flex flex-col items-center justify-center -translate-y-[50px]"
       >
         {/* Lottie Animation Display (Optimized for Mobile & Desktop) */}
         <div className="w-full max-w-[270px] xs:max-w-[320px] sm:max-w-[400px] aspect-[16/10] sm:aspect-[16/9] mx-auto flex items-center justify-center mb-1">
