@@ -30,15 +30,15 @@ export function NotFoundPage() {
   }, [shouldReduceMotion]);
 
   return (
-    <div className="min-h-[85vh] flex items-center justify-center pt-24 sm:pt-28 pb-16 px-4">
+    <div className="min-h-[80vh] sm:min-h-[85vh] flex items-center justify-center pt-20 sm:pt-28 pb-12 sm:pb-16 px-4">
       <motion.div
         initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-        className="max-w-lg w-full mx-auto text-center flex flex-col items-center justify-center"
+        className="w-full max-w-md sm:max-w-lg mx-auto text-center flex flex-col items-center justify-center"
       >
-        {/* Lottie Animation Display (Cropped & Tightly Balanced) */}
-        <div className="w-full max-w-[320px] sm:max-w-[400px] aspect-[16/9] mx-auto flex items-center justify-center mb-1">
+        {/* Lottie Animation Display (Optimized for Mobile & Desktop) */}
+        <div className="w-full max-w-[270px] xs:max-w-[320px] sm:max-w-[400px] aspect-[16/10] sm:aspect-[16/9] mx-auto flex items-center justify-center mb-1">
           <div
             ref={containerRef}
             className="w-full h-full flex items-center justify-center"
@@ -46,21 +46,27 @@ export function NotFoundPage() {
           />
         </div>
 
-        {/* Text Details & Status Pill */}
-        <div className="space-y-2.5 max-w-md mx-auto">
-
-          <h1 className="text-3xl sm:text-4xl font-black text-[#111827] tracking-tight">
+        {/* Text Details & Heading */}
+        <div className="space-y-2 sm:space-y-2.5 w-full max-w-xs sm:max-w-md mx-auto px-2 sm:px-0">
+          <h1 className="text-2xl sm:text-4xl font-black text-[#111827] tracking-tight">
             Page Not Found
           </h1>
 
-          <p className="text-sm sm:text-base text-[#4B5563] leading-relaxed">
+          <p className="text-xs sm:text-base text-[#4B5563] leading-relaxed">
             The page you are looking for doesn't exist, has been moved, or the link may be outdated.
           </p>
         </div>
 
-        {/* Navigation Action Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-3 pt-6">
-          <Button to="/" variant="primary" size="md" icon={Home} iconPosition="left">
+        {/* Navigation Action Buttons (Stacked on Mobile, Horizontal Row on Desktop) */}
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-2.5 sm:gap-3 pt-5 sm:pt-6 w-full max-w-xs sm:max-w-none mx-auto">
+          <Button
+            to="/"
+            variant="primary"
+            size="md"
+            icon={Home}
+            iconPosition="left"
+            className="w-full sm:w-auto"
+          >
             Back to Home
           </Button>
 
@@ -70,6 +76,7 @@ export function NotFoundPage() {
             size="md"
             icon={FolderKanban}
             iconPosition="left"
+            className="w-full sm:w-auto"
           >
             Explore Projects
           </Button>
@@ -80,6 +87,7 @@ export function NotFoundPage() {
             size="md"
             icon={MessageSquare}
             iconPosition="left"
+            className="w-full sm:w-auto"
           >
             Contact
           </Button>
