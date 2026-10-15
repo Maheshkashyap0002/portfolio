@@ -48,10 +48,6 @@ export function NotFoundPage() {
 
         {/* Text Details & Status Pill */}
         <div className="space-y-2.5 max-w-md mx-auto">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-semibold bg-[#FFF5F2] text-[#BA3F68] border border-[#F5D5CB]">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#EB7753] animate-pulse" />
-            <span>404 Error • Page Not Found</span>
-          </div>
 
           <h1 className="text-3xl sm:text-4xl font-black text-[#111827] tracking-tight">
             Page Not Found
